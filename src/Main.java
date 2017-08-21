@@ -20,6 +20,21 @@ public class Main {
 		for(int i=0; i<10; i++)
 			iList.addFirst(i);
 		System.out.println(iList);
+		
+		while(!iList.isEmpty()) {
+			iList.removeLast();
+			System.out.println(iList);
+		}
+		
+		for(int i=0; i<10; i++)
+			iList.addLast(i);
+		System.out.println(iList);
+		
+		System.out.println(iList.getFirst());
+		System.out.println(iList.getLast());
+		
+		iList.clear();
+		System.out.println(iList);
 	}
 	
 }
