@@ -35,6 +35,12 @@ public class Main {
 		
 		iList.clear();
 		System.out.println(iList);
+		
+		for(int i=0; i<10; i++)
+			iList.addLast(null);
+		System.out.println(iList);
+		
+		System.out.println(iList.indexOf(1));
 	}
 	
 }

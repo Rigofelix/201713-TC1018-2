@@ -85,8 +85,13 @@ public class SLinkedList<E> {
 			}
 		}
 		else {
-			// TODO
+			for(SNode<E> x = top.next; x != null; x = x.next) {
+				if(o.equals(x.value))
+					return index;
+				index++;
+			}
 		}
+		return -1;
 	}
 	
 	public void clear() {
